@@ -113,8 +113,6 @@ p {
   font-weight: lighter;
 }
 
-
-
 .scrolling-wrapper {
   padding-left: 20%;
   padding-right: 20%;
@@ -271,8 +269,9 @@ p {
   .fixed-navbar{
     display: none;
   }
-
 }
+  
+
 
 
 body {
@@ -293,8 +292,8 @@ body {
   font-family: "Merriweather";
   /* outline: 10px solid hotpink; */
 }
-
 .panel2 {
+  width:100%;
   background-color: white;
   min-height: 75vh;
   display: flex;
@@ -302,8 +301,8 @@ body {
   align-items: flex-start;
   font-family: "Merriweather";
 }
-
 .panel3 {
+  width:100%;
   background-color: white;
   min-height: 50vh;
   display: flex;
@@ -311,8 +310,8 @@ body {
   align-items: flex-start;
   font-family: "Merriweather";
 }
-
 .panel4 {
+  width:100%;
   background-color: white;
   min-height: 60vh;
   display: flex;
@@ -320,8 +319,8 @@ body {
   align-items: flex-start;
   font-family: "Merriweather";
 }
-
 .panel5 {
+  width:100%;
   background-color: white;
   min-height: 75vh;
   display: flex;
@@ -330,8 +329,8 @@ body {
   align-items: center;
   font-family: "Merriweather";
 }
-
 .panel6 {
+  width:100%;
   background-color: white;
   min-height: 30vh;
   display: flex;
@@ -340,8 +339,8 @@ body {
   align-items: center;
   font-family: "Merriweather";
 }
-
 .panel7 {
+  width:100%;
   background-color: white;
   min-height: 75vh;
   display: flex;
