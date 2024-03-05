@@ -72,6 +72,118 @@ p {
   left: -10px;
 }
 
+/* ###################### Gallery ###################### */
+#committeeGallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.galleryImage{
+  height: 300px;
+  width: 300px;
+}
+#staffGallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #69340E;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#position {
+  margin: 10px;
+  color: white;
+  font-size: 30px;
+}
+#name {
+  margin: 0px;
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+
+
+.scrolling-wrapper {
+  padding-left: 20%;
+  padding-right: 20%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding-bottom: 10px;
+}
+.flagImage{
+  display: inline-block;
+  height:200px;
+  width:400px;
+}
+.scrollcard {
+  position: relative;
+  display: inline-block;
+  height: 200px;
+  width: 400px;
+
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+.flag-text{
+  font-style: 'Merriweather';
+  color: white;
+}
+
+@media screen and (max-width: 1150px) {
+  #committeeGallery {
+    display: flex; /* Enable flexbox */
+    flex-wrap: nowrap; /* Prevent wrapping to ensure a single row */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Hide vertical scroll */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+    justify-content: flex-start; /* Align items at the start of the flex container */
+    align-items: center; /* Center items vertically */
+    padding-left: 0; /* Adjust padding as needed */
+    padding-right: 0; /* Adjust padding as needed */
+    margin: 0 auto; /* Center the gallery horizontally */
+    width: 100%; /* Full width to utilize available space */
+  }
+  .card {
+    flex: 0 0 auto; /* Do not grow, do not shrink, and based on its width */
+    margin-right: 20px; /* Add some space between cards */
+    width: 250px; /* Fixed width for each card */
+    height: 350px; /* Fixed height for each card */
+  }
+  /* Ensure images within cards are responsive */
+  .galleryImage {
+    width: 250px;
+    height: 250px;
+
+  }  
+  #position {
+    margin: 10px;
+    color: white;
+    font-size: 25px;
+  }
+  #name {
+    margin: 0px;
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  
+}
 
 @media screen and (max-width: 768px) {
   #siteLogo{
@@ -87,7 +199,7 @@ p {
     max-height: 70%;
   }
   p {
-    font-size: 4vw;
+    font-size: 5vw;
   }
   .header h1 {
     font-size: 12vw; 
@@ -96,16 +208,14 @@ p {
     font-size: 5vw;
   }
   .header h3 {
-    font-size: 6vw;
+    font-size: 7vw;
   }
   .header h4 {
-    font-size: 4vw;
+    font-size: 5vw;
   }
   .body-li{
     font-size: 4vw;
   }
-
-
 
   .navbar {
     transform: translateX(-100%);
@@ -161,7 +271,7 @@ p {
   .fixed-navbar{
     display: none;
   }
-  
+
 }
 
 
@@ -241,77 +351,6 @@ body {
   font-family: "Merriweather";
 }
 
-/* ###################### Gallery ###################### */
-#committeeGallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-left: 20%;
-  padding-right: 20%;
-}
-.galleryImage{
-  height: 300px;
-  width: 300px;
-}
-#staffGallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.card {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  
-  flex-wrap: wrap;
-  align-items: center;
-  background-color: #69340E;
-  padding: 10px;
-  margin: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-#position {
-  margin: 10px;
-  color: white;
-  font-size: 30px;
-}
-#name {
-  margin: 0px;
-  color: white;
-  font-size: 20px;
-  font-weight: lighter;
-}
-
-.scrolling-wrapper {
-  padding-left: 20%;
-  padding-right: 20%;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  padding-bottom: 10px;
-}
-.flagImage{
-  display: inline-block;
-  height:200px;
-  width:400px;
-}
-.scrollcard {
-  position: relative;
-  display: inline-block;
-  height: 200px;
-  width: 400px;
-
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 20px;
-  padding-bottom: 0px;
-  text-align: center;
-}
-
-.flag-text{
-  font-style: 'Merriweather';
-  color: white;
-}
 
 /* ###################### NAV BAR ###################### */
 .navbar {
