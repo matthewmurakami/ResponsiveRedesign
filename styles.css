@@ -6,8 +6,107 @@
   cursor: pointer;
   display: none; /* Added to initially hide the menu toggle */
 }
+#siteLogo{
+  max-width: 60%;
+  max-height: 60%
+}
+#image1{
+  max-width: 30%;
+  max-height: 30%;
+}
+#pres-image{
+  max-width: 90%;
+  max-height: 90%;
+}
+p {
+  color:#000;
+  font-size: 2.5vw;
+  text-align: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
+
+}
+.header {
+  padding: 60px;
+  background: rgba(0,0,0,0);
+  color: white;
+  font-size: 4em;
+  text-align: center;
+  margin-top: 5px;
+}
+.header h1 {
+  font-size: clamp(2vw, 7vw, 10vw); 
+  margin-bottom: 0;
+}
+.header h2 {
+  font-size: clamp(1vw, 2.5vw, 6vw);
+  font-weight: 100;
+  font-style: italic;
+  margin-top: 0;
+}
+.header h3 {
+  color: #69340E;
+  font-size: clamp(4vw, 4vw, 4vw);
+  font-weight:bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.header h4 {
+  color: Black;
+  font-size: clamp(2.5vw, 2.5vw,2.5vw);
+  font-weight:bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.body-list {
+  padding-left: 20vw; /* Reduces the gap from the container's edge to the bullets */
+  font-size: clamp(1.5vw, 2vw, 3vw);
+  color: black;
+  font-size:30px;
+}
+.body-li{
+  font-size: clamp(1.5vw, 2vw, 3vw);
+  text-align: left;
+  list-style-type:disc; /* or any other style you prefer */
+  position: center;
+  left: -10px;
+}
+
 
 @media screen and (max-width: 768px) {
+  #siteLogo{
+    max-width: 90%;
+    max-height: 90%
+  }
+  #image1{
+    max-width: 50%;
+    max-height: 50%;
+  }
+  #pres-image{
+    max-width: 70%;
+    max-height: 70%;
+  }
+  p {
+    font-size: 4vw;
+  }
+  .header h1 {
+    font-size: 12vw; 
+  }
+  .header h2 {
+    font-size: 5vw;
+  }
+  .header h3 {
+    font-size: 6vw;
+  }
+  .header h4 {
+    font-size: 4vw;
+  }
+  .body-li{
+    font-size: 4vw;
+  }
+
+
+
   .navbar {
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
@@ -62,6 +161,7 @@
   .fixed-navbar{
     display: none;
   }
+  
 }
 
 
@@ -69,71 +169,7 @@ body {
   color: #000;
   background-color: #69340E;
 }
-#siteLogo{
-  max-width: 50%;
-  max-height: 50%
-}
-#image1{
-  max-width: 25%;
-  max-height: 25%;
-}
-p {
-  color:#000;
-  font-size:clamp(2.25vw, 2.4vw, 2.4vw);
-  text-align: center;
-  padding-left: 10vw;
-  padding-right: 10vw;
 
-}
-.header {
-  padding: 60px;
-  background: rgba(0,0,0,0);
-  color: white;
-  font-size: 4em;
-  text-align: center;
-  margin-top: 5px;
-}
-.header h1 {
-  font-size: clamp(2vw, 7vw, 10vw); 
-  margin-bottom: 0;
-}
-.header h2 {
-  font-size: clamp(1vw, 2.5vw, 6vw);
-  font-weight: 100;
-  font-style: italic;
-  margin-top: 0;
-}
-.header h3 {
-  color: #69340E;
-  font-size: clamp(4vw, 4vw, 4vw);
-  font-weight:bold;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.header h4 {
-  color: Black;
-  font-size: clamp(2.5vw, 2.5vw,2.5vw);
-  font-weight:bold;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-
-.body-list {
-  padding-left: 20vw; /* Reduces the gap from the container's edge to the bullets */
-  font-size: clamp(1.5vw, 2vw, 3vw);
-
-  color: black;
-  font-size:30px;
-}
-.body-li{
-  font-size: clamp(1.5vw, 2vw, 3vw);
-
-  text-align: left;
-  list-style-type:disc; /* or any other style you prefer */
-  position: relative;
-  left: -10px;
-}
 
 /* ################## panel styles #################### */
 
@@ -275,15 +311,6 @@ p {
   font-style: 'Merriweather';
   color: white;
 }
-/* .scrollcard {
-  display: inline-block;
-  height: 200px;
-  width: 400px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 20px;
-  padding-bottom: 0px;
-} */
 
 /* ###################### NAV BAR ###################### */
 .navbar {
