@@ -269,6 +269,32 @@ p {
   .fixed-navbar{
     display: none;
   }
+
+
+  .scrolling-wrapper {
+    padding-left: 20%;
+    padding-right: 20%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding-bottom: 10px;
+  }
+  .flagImage{
+    display: inline-block;
+    height:100px;
+    width:200px;
+  }
+  .scrollcard {
+    position: relative;
+    display: inline-block;
+    height: 100px;
+    width: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    text-align: center;
+  }
 }
   
 
