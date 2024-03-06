@@ -77,8 +77,8 @@ body {
 }
 
 .external-link-icon {
-  height: 1em; /* Match the height of the text for alignment */
-  width: auto; /* Maintain aspect ratio */
+  height: 15px; /* Match the height of the text for alignment */
+  width: 15px; /* Maintain aspect ratio */
   vertical-align:top; /* Align with the middle of the text */
   margin-left: 5px; /* Add some space between the text and the icon */
 }
