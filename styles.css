@@ -1,10 +1,10 @@
 .menu-toggle {
   position: fixed;
   z-index: 1010; /* Above the navbar */
-  top: 20px; /* Adjust as needed */
-  left: 20px; /* Adjust as needed */
+  top: 20px; 
+  left: 20px;
   cursor: pointer;
-  display: none; /* Added to initially hide the menu toggle */
+  display: none; /* Initially hide the menu toggle */
 }
 #siteLogo{
   max-width: 60%;
@@ -58,9 +58,24 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
-
+.header h6 {
+  color: blue;
+  font-size: clamp(2.5vw, 2.5vw,2.5vw);
+  font-weight:bold;
+  text-decoration: underline;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.header h7 {
+  color: Black;
+  font-size: clamp(2.5vw, 2.5vw,2.5vw);
+  font-weight:bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 .body-list {
-  padding-left: 20vw; /* Reduces the gap from the container's edge to the bullets */
+  padding-left: 20vw;
   font-size: clamp(1.5vw, 2vw, 3vw);
   color: black;
   font-size:30px;
@@ -68,7 +83,7 @@ p {
 .body-li{
   font-size: clamp(1.5vw, 2vw, 3vw);
   text-align: left;
-  list-style-type:disc; /* or any other style you prefer */
+  list-style-type:disc;
   position: center;
   left: -10px;
 }
@@ -76,12 +91,11 @@ body {
   color: #000;
   background-color: #69340E;
 }
-
 .external-link-icon {
-  height: 15px; /* Match the height of the text for alignment */
-  width: 15px; /* Maintain aspect ratio */
-  vertical-align:top; /* Align with the middle of the text */
-  margin-left: 5px; /* Add some space between the text and the icon */
+  height: 15px; 
+  width: 15px; 
+  vertical-align:top;
+  margin-left: 5px;
 }
 /* ###################### Gallery ###################### */
 #committeeGallery {
@@ -123,7 +137,6 @@ body {
   font-size: 20px;
   font-weight: lighter;
 }
-
 .scrolling-wrapper {
   padding-left: 20%;
   padding-right: 20%;
@@ -230,7 +243,7 @@ body {
   width: 100%;
   position: fixed;
   top: 0;
-  background-color: rgba(0, 0, 0, 255); /* Adjust the navbar color as needed */
+  background-color: rgba(0, 0, 0, 255);
   z-index: 1000;
 }
 .navbar ul {
@@ -253,83 +266,97 @@ body {
   text-align: center;
 }
 .navbar li:hover > ul {
-  display: block; /* Show dropdown on hover */
+  display: block;
 }
 .navbar ul ul {
-  display: none; /* Keep sub-menus hidden initially */
+  display: none;
   position: absolute; /* Position sub-menus absolutely within their parent li */
   background-color: #333; /* Sub-menu background */
-}
-.navbar li:hover > ul {
-  display: block;
+  min-width: max-content; /* Ensure the width matches the longest content */
+  z-index: 1000;
 }
 .navbar ul ul li {
   float: none; /* Dropdown items should not float */
 }
 .navbar ul ul li a {
-  padding: 10px; /* Slightly smaller padding for dropdown links */
-  white-space: nowrap; /* Ensures dropdown items text does not wrap */
+  padding: 10px;
+  white-space: nowrap;
 }
 .navbar li a:hover {
   background-color: white;
   color: black;
 }
-/* Highlight dropdown menu items on hover */
 .navbar ul ul li a:hover {
-  background-color: white; /* Different shade for dropdown item hover */
+  background-color: white;
 }
 
-@media screen and (min-width: 769px) {
-  /* Parent item positioning */
-  .navbar li {
-      position: relative; /* Establishes a positioning context for dropdowns */
-  }
 
-  /* Dropdown menu styling to match parent item width */
+/* ################### Fixed NAV BAR #################### */
+.fixed-navbar {
+  position: fixed; /* Keeps the navbar fixed during scrolling */
+  top: 41%; /* Center it vertically */
+  left: 2%; /* Align to the left side of the viewport */
+  transform: translateY(-50%); /* Center it vertically with respect to its height */
+  background-color: rgba(0,0,0,0);
+  z-index: 1000;
+}
+.fixed-navbar ul {
+  list-style: none; /* Removes default list styling */
+  padding: 0;
+  margin: 0;
+}
+.fixed-navbar li {
+  padding: 2px;
+}
+.fixed-navbar a {
+  text-decoration: none;
+  color: black; 
+  display: block;
+}
+
+
+@media screen and (min-width: 769px) {
+  .navbar li {
+      position: relative; /* Positioning context for dropdowns */
+  }
   .navbar ul ul {
       position: absolute; /* Positions dropdown relative to its parent item */
       top: 100%; /* Aligns dropdown directly below the parent item */
       left: 0;
       width: 100%; /* Sets dropdown width equal to its parent item */
-      background-color: #333; /* Or any desired background color */
+      background-color: #333;
       display: none; /* Ensures dropdown is not displayed until hovered */
       z-index: 1000; /* Ensures dropdown is above other content */
   }
-
-  /* Ensure dropdown items take up full width of the dropdown */
   .navbar ul ul li a {
       width: 100%; /* Makes sure the link uses the full width of the dropdown */
       box-sizing: border-box; /* Includes padding and border in the element's total width */
   }
-
-  /* Display dropdown on hover */
   .navbar li:hover > ul {
       display: block;
   }
 }
 
-
 @media screen and (max-width: 1150px) {
   #committeeGallery {
-    display: flex; /* Enable flexbox */
+    display: flex;
     flex-wrap: nowrap; /* Prevent wrapping to ensure a single row */
     overflow-x: auto; /* Enable horizontal scrolling */
     overflow-y: hidden; /* Hide vertical scroll */
     -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
-    justify-content: flex-start; /* Align items at the start of the flex container */
-    align-items: center; /* Center items vertically */
-    padding-left: 0; /* Adjust padding as needed */
-    padding-right: 0; /* Adjust padding as needed */
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 0; 
+    padding-right: 0;
     margin: 0 auto; /* Center the gallery horizontally */
     width: 100%; /* Full width to utilize available space */
   }
   .card {
     flex: 0 0 auto; /* Do not grow, do not shrink, and based on its width */
     margin-right: 20px; /* Add some space between cards */
-    width: 250px; /* Fixed width for each card */
-    height: 350px; /* Fixed height for each card */
+    width: 250px;
+    height: 350px;
   }
-  /* Ensure images within cards are responsive */
   .galleryImage {
     width: 250px;
     height: 250px;
@@ -345,8 +372,7 @@ body {
     color: white;
     font-size: 20px;
     font-weight: lighter;
-  }
-  
+  } 
 }
 
 @media screen and (max-width: 768px) {
@@ -380,10 +406,25 @@ body {
   .header h4 {
     font-size: 5vw;
   }
+  .header h6 {
+    color: blue;
+    font-size: 5vw;
+    font-weight:bold;
+    text-decoration: underline;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .header h7 {
+    color: Black;
+    font-size: 5vw;
+    font-weight:bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
   .body-li{
     font-size: 4vw;
   }
-
   .navbar {
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
@@ -393,14 +434,14 @@ body {
     height: 100%;
     z-index: 1000;
     display: block;
-    width: 50%; /* Adjust the width of the sliding menu */
+    width: 50%;
     background-color: black; /* Match the navbar color */
   }
   .menu-toggle {
     position: fixed;
     z-index: 1010; /* Above the navbar */
-    top: 20px; /* Adjust as needed */
-    left: 20px; /* Adjust as needed */
+    top: 20px;
+    left: 20px;
     border: none;
     background: none;
     cursor: pointer;
@@ -412,28 +453,27 @@ body {
   .navbar ul {
     background-color: #000;
     display: flex;
-    flex-direction: column; /* Stacks items vertically */
-    align-items:center; /* Aligns items to the right (end of the flex container) */
+    flex-direction: column;
+    align-items:center;
   }
   .navbar li {
-    align-self: stretch; /* Makes each list item take full width of the container */
-    text-align: center;  /* Aligns the text/link inside each <li> to the right */
+    align-self: stretch; 
+    text-align: center;
   }
   .navbar li a {
-    display: block; /* Ensures the anchor tags fill the list item */
-    width: 90%; /* Ensures links take full width, clickable area is maximized */
+    display: block;
+    width: 90%;
   }
-
   .fixed-navbar-replacement {
     position: fixed; /* Keeps the image fixed during scrolling */
     top: 50%; /* Center it vertically */
     left: 2%; /* Align to the left side of the viewport */
     transform: translateY(-50%); /* Center it vertically with respect to its height */
-    background-image: url('./assets/quick_scroll.png'); /* Path to your image */
+    background-image: url('./assets/quick_scroll.png');
     background-size: cover; /* Cover the entire div */
     background-position: center; /* Center the background image */
-    width:60px; /* Adjust width as needed */
-    height: 60px; /* Adjust height as needed */
+    width:60px;
+    height: 60px;
     z-index: 1000; /* Ensure it stays above other content */
     display: none;
   }
@@ -465,28 +505,5 @@ body {
     text-align: center;
   }
 }
-  
 
-/* ################### Fixed NAV BAR #################### */
 
-.fixed-navbar {
-  position: fixed; /* Keeps the navbar fixed during scrolling */
-  top: 41%; /* Center it vertically */
-  left: 2%; /* Align to the left side of the viewport */
-  transform: translateY(-50%); /* Center it vertically with respect to its height */
-  background-color: rgba(0,0,0,0); /* Light background color */
-  z-index: 1000; /* Ensure it stays above other content */
-}
-.fixed-navbar ul {
-  list-style: none; /* Removes default list styling */
-  padding: 0;
-  margin: 0;
-}
-.fixed-navbar li {
-  padding: 2px; /* Adds some space around the links */
-}
-.fixed-navbar a {
-  text-decoration: none; /* Removes underline from links */
-  color: black; /* Set the link color */
-  display: block; /* Makes the entire list item clickable */
-}
