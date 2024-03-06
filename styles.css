@@ -58,6 +58,7 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .body-list {
   padding-left: 20vw; /* Reduces the gap from the container's edge to the bullets */
   font-size: clamp(1.5vw, 2vw, 3vw);
