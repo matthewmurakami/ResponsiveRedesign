@@ -66,18 +66,22 @@ p {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-.body-list {
-  padding-left: 20vw;
-  font-size: clamp(1.5vw, 2vw, 3vw);
-  color: black;
-  font-size:30px;
-}
-.body-li{
+.body-li {
   font-size: 30px;
-  text-align: left;
-  list-style-type:disc;
-  position: center;
-  
+  text-align: center; /* Centers the text horizontally */
+  list-style-type:circle; /* Removes the default list bullet */
+  display: block; /* Treats the list item as a block element, allowing text-align to work */
+  width: 100%; /* Ensures the list item takes the full width of its container */
+  margin: auto; /* Centers the block-level element horizontally if it has a width */
+  padding-top: 10px; /* Removes default padding */
+}
+
+.body-list {
+  padding: 0;
+  width: 100%; /* Ensures the unordered list takes the full width of its container */
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Stacks the list items vertically */
+  align-items: center;
 }
 body {
   color: #000;
