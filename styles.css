@@ -11,8 +11,8 @@
   max-height: 60%
 }
 #image1{
-  max-width: 30%;
-  max-height: 30%;
+  height: 600px;
+  width: 400px;
 }
 #pres-image{
   max-width: 90%;
@@ -20,7 +20,8 @@
 }
 p {
   color:#000;
-  font-size: 2.5vw;
+  /* font-size: 2vw; */
+  font-size: 30px;
   text-align: center;
   padding-left: 10vw;
   padding-right: 10vw;
@@ -46,29 +47,29 @@ p {
 }
 .header h3 {
   color: #69340E;
-  font-size: clamp(4vw, 4vw, 4vw);
+  font-size: 50px;
   font-weight:bold;
   margin-top: 0;
   margin-bottom: 0;
 }
 .header h4 {
   color: Black;
-  font-size: clamp(2.5vw, 2.5vw,2.5vw);
+  font-size: 30px;
   font-weight:bold;
   margin-top: 0;
   margin-bottom: 0;
 }
 .header h6 {
   color: blue;
-  font-size: clamp(2.5vw, 2.5vw,2.5vw);
-  font-weight:bold;
+  font-size: 30px;
+  font-weight:normal;
   text-decoration: underline;
   margin-top: 0;
   margin-bottom: 0;
 }
 .header h7 {
   color: Black;
-  font-size: clamp(2.5vw, 2.5vw,2.5vw);
+  font-size: 30px;
   font-weight:bold;
   margin-top: 0;
   margin-bottom: 0;
@@ -81,11 +82,11 @@ p {
   font-size:30px;
 }
 .body-li{
-  font-size: clamp(1.5vw, 2vw, 3vw);
+  font-size: 30px;
   text-align: left;
   list-style-type:disc;
   position: center;
-  left: -10px;
+  
 }
 body {
   color: #000;
@@ -381,8 +382,8 @@ body {
     max-height: 90%
   }
   #image1{
-    max-width: 50%;
-    max-height: 50%;
+    width: 50%;
+    height: 50%;
   }
   #pres-image{
     max-width: 70%;
