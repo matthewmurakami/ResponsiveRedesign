@@ -1,3 +1,34 @@
+/* ###################### Buttons ###################### */
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 columns of equal width */
+  gap: 10px; /* Adjusts the space between grid items */
+  justify-content: center;
+  align-items: center;
+}
+.rect-button {
+  background-color: #69340E;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.rect-button:hover {
+  background-color: #4e260a; /* Darker blue on hover */
+}
+
+/* ###################### Images ###################### */
+#siteLogo{
+  max-width: 60%;
+  max-height: 60%
+}
 .menu-toggle {
   position: fixed;
   z-index: 1010; /* Above the navbar */
@@ -5,10 +36,6 @@
   left: 20px;
   cursor: pointer;
   display: none; /* Initially hide the menu toggle */
-}
-#siteLogo{
-  max-width: 60%;
-  max-height: 60%
 }
 #overviewImage{
   height: 600px;
@@ -18,6 +45,23 @@
   max-width: 90%;
   max-height: 90%;
 }
+.external-link-icon {
+  height: 15px; 
+  width: 15px; 
+  vertical-align:top;
+  margin-left: 5px;
+}
+.flagImage{
+  display: inline-block;
+  height:200px;
+  width:400px;
+}
+.galleryImage{
+  height: 300px;
+  width: 300px;
+}
+
+/* ###################### Text ###################### */
 p {
   color:#000;
   /* font-size: 2vw; */
@@ -75,7 +119,6 @@ p {
   margin: auto; /* Centers the block-level element horizontally if it has a width */
   padding-top: 10px; /* Removes default padding */
 }
-
 .body-list {
   padding: 0;
   width: 100%; /* Ensures the unordered list takes the full width of its container */
@@ -87,12 +130,7 @@ body {
   color: #000;
   background-color: #69340E;
 }
-.external-link-icon {
-  height: 15px; 
-  width: 15px; 
-  vertical-align:top;
-  margin-left: 5px;
-}
+
 /* ###################### Gallery ###################### */
 #committeeGallery {
   display: flex;
@@ -100,10 +138,6 @@ body {
   justify-content: center;
   padding-left: 20%;
   padding-right: 20%;
-}
-.galleryImage{
-  height: 300px;
-  width: 300px;
 }
 #staffGallery {
   display: flex;
@@ -140,11 +174,6 @@ body {
   overflow-y: hidden;
   white-space: nowrap;
   padding-bottom: 10px;
-}
-.flagImage{
-  display: inline-block;
-  height:200px;
-  width:400px;
 }
 .scrollcard {
   position: relative;
