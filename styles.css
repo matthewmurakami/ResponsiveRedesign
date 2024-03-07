@@ -1,5 +1,6 @@
 /* ###################### Buttons ###################### */
 
+/* For the button grid */
 .button-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Creates 3 columns of equal width */
@@ -21,7 +22,27 @@
   transition: background-color 0.3s ease;
 }
 .rect-button:hover {
-  background-color: #4e260a; /* Darker blue on hover */
+  background-color: #3a1d07; /* Darker blue on hover */
+}
+/* For the sign up button */
+.centered-button-container {
+  display: flex;
+  justify-content: center; /* Centers the button horizontally */
+  margin-top: 20px; /* Add space above the button */
+}
+.centered-button {
+  font-family: 'Merriweather';
+  background-color: #69340E; /* Match other buttons' color */
+  color: white;
+  border: none;
+  padding: 10px 20px; /* Adjustable based on desired button size */
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 30px; /* Matches .rect-button font size */
+  transition: background-color 0.3s ease;
+}
+.centered-button:hover {
+  background-color: #3a1d07; /* Darker on hover, matching .rect-button */
 }
 
 /* ###################### Images ###################### */
