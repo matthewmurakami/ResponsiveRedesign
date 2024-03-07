@@ -22,7 +22,7 @@
   transition: background-color 0.3s ease;
 }
 .rect-button:hover {
-  background-color: #3a1d07; /* Darker blue on hover */
+  background-color: #3a1d07;
 }
 /* For the sign up button */
 .join-button-container {
@@ -32,17 +32,17 @@
 }
 .join-button {
   font-family: 'Merriweather';
-  background-color: #69340E; /* Match other buttons' color */
+  background-color: #69340E;
   color: white;
   border: none;
-  padding: 10px 20px; /* Adjustable based on desired button size */
+  padding: 10px 20px; 
   cursor: pointer;
   text-decoration: none;
-  font-size: 30px; /* Matches .rect-button font size */
+  font-size: 30px;
   transition: background-color 0.3s ease;
 }
 .join-button:hover {
-  background-color: #3a1d07; /* Darker on hover, matching .rect-button */
+  background-color: #3a1d07;
 }
 
 /* ###################### Images ###################### */
@@ -85,7 +85,6 @@
 /* ###################### Text ###################### */
 p {
   color:#000;
-  /* font-size: 2vw; */
   font-size: 30px;
   text-align: center;
   padding-left: 10vw;
@@ -134,16 +133,16 @@ p {
 .body-li {
   font-size: 30px;
   text-align: center; /* Centers the text horizontally */
-  list-style-type:circle; /* Removes the default list bullet */
-  display: block; /* Treats the list item as a block element, allowing text-align to work */
-  width: 100%; /* Ensures the list item takes the full width of its container */
+  list-style-type:circle;
+  display: block; /* Treats the list item as a block element*/
+  width: 100%; 
   margin: auto; /* Centers the block-level element horizontally if it has a width */
-  padding-top: 10px; /* Removes default padding */
+  padding-top: 10px;
 }
 .body-list {
   padding: 0;
-  width: 100%; /* Ensures the unordered list takes the full width of its container */
-  display: flex; /* Enables flexbox layout */
+  width: 100%; /* Ensures the list takes the full width of container */
+  display: flex;
   flex-direction: column; /* Stacks the list items vertically */
   align-items: center;
 }
@@ -341,7 +340,7 @@ body {
   position: fixed; /* Keeps the navbar fixed during scrolling */
   top: 41%; /* Center it vertically */
   left: 2%; /* Align to the left side of the viewport */
-  transform: translateY(-50%); /* Center it vertically with respect to its height */
+  transform: translateY(-50%);
   background-color: rgba(0,0,0,0);
   z-index: 1000;
 }
@@ -366,12 +365,12 @@ body {
   }
   .navbar ul ul {
       position: absolute; /* Positions dropdown relative to its parent item */
-      top: 100%; /* Aligns dropdown directly below the parent item */
+      top: 100%; 
       left: 0;
       width: 100%; /* Sets dropdown width equal to its parent item */
       background-color: #333;
-      display: none; /* Ensures dropdown is not displayed until hovered */
-      z-index: 1000; /* Ensures dropdown is above other content */
+      display: none; 
+      z-index: 1000; 
   }
   .navbar ul ul li a {
       width: 100%; /* Makes sure the link uses the full width of the dropdown */
