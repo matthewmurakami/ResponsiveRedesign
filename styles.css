@@ -25,12 +25,12 @@
   background-color: #3a1d07; /* Darker blue on hover */
 }
 /* For the sign up button */
-.centered-button-container {
+.join-button-container {
   display: flex;
   justify-content: center; /* Centers the button horizontally */
   margin-top: 20px; /* Add space above the button */
 }
-.centered-button {
+.join-button {
   font-family: 'Merriweather';
   background-color: #69340E; /* Match other buttons' color */
   color: white;
@@ -41,7 +41,7 @@
   font-size: 30px; /* Matches .rect-button font size */
   transition: background-color 0.3s ease;
 }
-.centered-button:hover {
+.join-button:hover {
   background-color: #3a1d07; /* Darker on hover, matching .rect-button */
 }
 
