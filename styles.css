@@ -10,7 +10,7 @@
   max-width: 60%;
   max-height: 60%
 }
-#image1{
+#overviewImage{
   height: 600px;
   width: 400px;
 }
@@ -291,7 +291,6 @@ body {
   background-color: white;
 }
 
-
 /* ################### Fixed NAV BAR #################### */
 .fixed-navbar {
   position: fixed; /* Keeps the navbar fixed during scrolling */
@@ -381,7 +380,7 @@ body {
     max-width: 90%;
     max-height: 90%
   }
-  #image1{
+  #overviewImage{
     width: 50%;
     height: 50%;
   }
@@ -435,7 +434,7 @@ body {
     height: 100%;
     z-index: 1000;
     display: block;
-    width: 50%;
+    width: 60%;
     background-color: black; /* Match the navbar color */
   }
   .menu-toggle {
